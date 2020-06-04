@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .gallery-section{
+    width: 100%;
+    padding: 60px 0;
+  
+  }
+  
+  .inner-width{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  .gallery-section h1{
+    text-align: center;
+    color: #333;
+    margin: 30px;
+  }
+  
+  .gallery-section .gallery{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  
+  .gallery-section .image{
+    flex: 25%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .gallery-section .image img{
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+  }
+  
+  .gallery-section .image:hover img{
+    transform: scale(1.4) rotate(15deg);
+  }
+  
+  @media screen and (max-width:960px) {
+    .gallery-section .image{
+      flex: 33.33%;
+    }
+  }
+  
+  @media screen and (max-width:768px) {
+    .gallery-section .image{
+      flex: 50%;
+    }
+  }
+  
+  @media screen and (max-width:480px) {
+    .gallery-section .image{
+      flex: 100%;
+    }
+  }
+  
+ 
+  .form-group> h2 {
+    text-align: right;
+    color: #FFFFFFEE;
+  }
+  
+   .doadores{
+    margin-bottom: 70px;
+    text-align: center;
+  }
+  
+  
+  
+  .form-group {
+    margin: 0 auto 70px;
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  /*HEADER*/
+  
+   button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 16px;
+    background-color: #ff4f4f;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /*FORM*/
+  section.form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 45px;
+    align-items: center;
+    background-color: #ff4f4f;
+    padding: 16px 64px;
+    border-radius: 6px;
+    font-size: 18px;
+  
+  }
+  
+  div > .form-group> input,
+  div> .form-group> button {
+    width: 100%;
+    margin-bottom: 4px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px #FFFFFF88 solid;
+  }
+  
+  div>.form-group> input{
+      background-color: transparent;
+  }
+  
+  div>.form-group> input::placeholder{
+      color: #FFFFFFAA;
+  }
+  
+  div>.form-group> button {
+      font-weight: bold;
+  }
+  
+  section.form-group{
+    transition: all 300ms;
+  }
+  
+  section.form-group.hide{
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin-top: -70px;
+  }

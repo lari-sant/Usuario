@@ -1,0 +1,397 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    margin: 0;
+    
+}
+/* main{
+    margin: 0 20px;
+} */
+
+.navbar {
+    font-size: 20px;
+    
+}
+
+.menu{
+    background-color: #183059;
+}
+
+.menu > li > a{
+    background-color: #183059;
+}
+
+.hamburger{
+    font-size: 30px;
+    color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white !important;
+}
+
+.btn{
+    font-size: 20px;
+}
+
+.slide{
+    margin-bottom: 200px;
+}
+
+
+
+
+
+#apoie{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    margin-top: -150px;
+    
+}
+
+#apoie .container{
+display: grid;
+grid-template-columns: 1fr ;
+grid-template-rows: 1fr 1fr;
+margin-top: 300px;
+margin-right: 50px;
+
+}
+
+.img-shirt {
+    width: 160px;
+    height: 210px;
+    z-index: 1;
+    box-shadow: 2px 2px 2px;
+    background-color: #fff;
+    grid-column-start: 1;
+    grid-column-end: 2;   
+    justify-self: end;
+}
+
+.img-socks {
+    width: 160px;
+    height: 210px;
+    z-index: 2;
+    box-shadow: 2px 2px 2px;
+    background-color: #fff;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3; 
+    justify-self: end;
+    
+    
+}
+
+.img-scarf {
+    width: 160px;
+    height: 210px;
+    z-index: 1;
+    box-shadow: 2px 2px 2px;
+    background-color: #fff;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    
+    
+    
+}
+
+.btn-new {
+    border-radius: 20px;
+    background-color: #183059;
+    border: none;
+}
+
+.btn-new:hover{
+    background-color: #fff;
+    color: #183059;
+    border: 1px solid #183059;
+}
+
+.position-section {
+    margin-left: 60px;
+}
+
+#sobre{
+    /* display: flex; */
+    padding: 0 0 0 50px;
+    margin-top: 200px;
+    margin-bottom: 300px;
+    display: inline-block;
+    /* margin: 250px 0 250px 200px; */
+    
+}
+
+#sobre h2{
+    margin-top: 50px;
+    color: #183059;
+    
+}
+
+#sobre p{
+    max-width: 800px;
+    font-size: 1.5em;
+    font-family: 'Bellota Text', cursive;
+    color: #183059;
+    
+    
+    
+}
+
+#parallax-image{
+    background-image: url("../../assets/roupas.png");
+    height: 400px;
+    margin: 50px 0 300px 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    overflow: hidden;  
+    
+}
+
+/* Cards com fotos dos idealizadores */
+
+
+
+
+
+@media screen and (max-width:649px){
+   
+    #apoie .container{
+        /* border: blue solid 2px;   */
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 50px;
+        
+    }
+
+    
+}
+
+@media screen and (max-width:611px){
+   
+    #apoie .container{
+        /* border: blue solid 2px;   */
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 10px;
+        
+    }
+
+    
+}
+
+@media screen and (max-width:575px){
+   
+    #apoie .container{
+        /* border: blue solid 2px;   */
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 0px;
+        
+    }
+
+    
+}
+
+@media screen and (max-width:560px){
+   
+    #apoie .container{
+        /* border: blue solid 2px;   */
+        width: 100%;
+        margin-top: 50px;
+        margin-left: -10px;   
+    }   
+}
+
+@media screen and (max-width:550px){
+    #apoie .container{
+       display: none;   
+    }   
+}
+
+
+
+body {
+    background: #212529;
+    background-size: cover;
+    padding-bottom: 35px;
+}
+body:after {
+    animation: grain 1s steps(10) infinite;
+    /* background-image: url(grains.png); */
+    content: "";
+    height: 300%;
+    left: -50%;
+    opacity: 0.8;
+    position: fixed;
+    top: -110%;
+    width: 300%;
+    z-index: 0;
+}
+
+@keyframes grain {
+    0%, 100% { transform: translate(0, 0); }
+    10% { transform: translate(-5%, -10%); }
+    20% { transform: translate(-15%, 5%); }
+    30% { transform: translate(7%, -25%); }
+    40% { transform: translate(-5%, 25%); }
+    50% { transform: translate(-15%, 10%); }
+    60% { transform: translate(15%, 0); }
+    70% { transform: translate(0, 15%); }
+    80% { transform: translate(3%, 35%); }
+    90% { transform: translate(-10%, 10%); }
+}
+
+.content {
+    z-index: 1;
+    position: relative;
+    height: 400px;
+    
+}
+
+h1 {
+    color: #e3e3e3 !important;
+    font-family: "Playfair Display" !important;
+    margin: 32px 0 32px 40px !important;
+}
+
+.row {
+    z-index: 1;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.cardd {
+    border: 1px solid rgba(255,255,255,0.1);
+    height: 220px;
+    -webkit-transition: 1s !important;
+}
+
+.row h5 {
+    color: #fff;
+    font-family: "Poppins";
+    margin: 48px 0 2px 4px;
+    font-size: 16px;
+}
+
+.row h5:before {
+    position: absolute;
+    content: "";
+    top: 50px;
+    left: -2px;
+    width: 2px;
+    height: 22px;
+    display: block;
+    background: #fff;
+}
+
+p {
+    color: grey;
+    margin-left: 4px;
+    font-size: 14px;
+    margin-bottom: 70px !important;
+}
+
+a {
+    margin-left: 4px;
+    color: lightgrey !important;
+    font-family: Poppins;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: grey !important;
+}
+
+.cardd:hover:before {
+    -webkit-transition: 1s !important;
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 100px;
+    width: 280px;
+    height: 280px;
+    z-index: -1;
+    animation: anim 3.2s ease-in-out;
+}
+
+.card1.cardd:hover::before {
+    background: url(../../assets/team1.jpg);
+}
+.card2.cardd:hover::before {
+    background: url(../../assets/team1.jpg);
+}
+.card3.cardd:hover::before {
+    background: url(../../assets/team1.jpg);
+}
+
+.card4.cardd:hover::before {
+    background: url(../../assets/team1.jpg);
+}
+.card5.cardd:hover::before {
+    background: url(../../assets/team1.jpg);
+}
+.card6.cardd:hover::before {
+    background: url(../../assets/team1.jpg);
+}
+
+.card7.cardd:hover::before {
+    background: url(../../assets/team1.jpg);
+}
+.card8.cardd:hover::before {
+    background: url(../../assets/team1.jpg);
+}
+
+@keyframes anim {
+    0% {
+         opacity: 0;
+         left: 70px;
+    }
+
+    20% {
+         opacity: 1;
+         left: 100px;
+    }
+
+    100% {
+         opacity: 1;
+         left: 100px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    a {
+         display: none !important;
+    }
+
+    .cardd {
+         height: 100px;
+    }
+
+    .row h5 {
+         margin: 28px 0 2px 4px;
+    }
+
+    .row p {
+         margin-bottom: 10px !important;
+    }
+
+    .row h5::before {
+         top: 26px;
+    }
+
+    .cardd:hover::before {
+         display: none;
+    }
+}

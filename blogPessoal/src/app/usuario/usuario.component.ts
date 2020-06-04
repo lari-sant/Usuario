@@ -11,6 +11,7 @@ import {usuario} from '../model/usuario';
 export class UsuarioComponent implements OnInit {
 
   listaUsuario: usuario []
+  usuario: usuario = new usuario
 
   constructor(private usuarioServices: UsuarioService) { }
 
@@ -23,5 +24,5 @@ export class UsuarioComponent implements OnInit {
       this.listaUsuario = resp
     })
   }
-
+  
 }
